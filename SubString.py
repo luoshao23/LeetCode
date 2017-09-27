@@ -4,7 +4,7 @@
 
 class Solution(object):
 
-    def lengthOfLongestSubstring(self, s):
+    def lengthOfLongestSubstring_1(self, s):
         """
         :type s: str
         :rtype: int
@@ -22,11 +22,7 @@ class Solution(object):
         return len(best_all)
 
 # Rolling window 2n
-
-
-class Solution(object):
-
-    def lengthOfLongestSubstring(self, s):
+    def lengthOfLongestSubstring_2(self, s):
         """
         :type s: str
         :rtype: int
@@ -48,9 +44,8 @@ class Solution(object):
 
 
 # Rolling window n
-class Solution(object):
-
-    def lengthOfLongestSubstring(self, s):
+# Let i jump directly to the char after the duplicate char
+    def lengthOfLongestSubstring_3(self, s):
         """
         :type s: str
         :rtype: int
@@ -66,3 +61,7 @@ class Solution(object):
             sets[s[j]] = j
 
         return ans
+
+
+##
+
